@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.test.spring.boot.logger.mapper.TManageUserMapper">
+  <resultMap id="BaseResultMap" type="com.test.spring.boot.logger.entity.TManageUser">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="Aid" jdbcType="INTEGER" property="aid" />
+    <result column="Auser_name" jdbcType="VARCHAR" property="auserName" />
+    <result column="Apass_word" jdbcType="VARCHAR" property="apassWord" />
+    <result column="Arole_id" jdbcType="INTEGER" property="aroleId" />
+    <result column="Astatus" jdbcType="INTEGER" property="astatus" />
+    <result column="Acreator" jdbcType="VARCHAR" property="acreator" />
+    <result column="Acreate_time" jdbcType="TIMESTAMP" property="acreateTime" />
+    <result column="Amodifier" jdbcType="VARCHAR" property="amodifier" />
+    <result column="Amodify_time" jdbcType="TIMESTAMP" property="amodifyTime" />
+    <result column="Aversion" jdbcType="INTEGER" property="aversion" />
+  </resultMap>
+</mapper>
