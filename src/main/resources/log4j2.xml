@@ -4,7 +4,7 @@
     <!--自定义颜色配置-->
     <conversionRule conversionWord="customcolor" converterClass="com.test.spring.boot.logger.config.LogbackColorConfig"/>
     <!-- 定义日志文件 输入位置 -->
-    <property name="log_dir" value="e:/logs/logger" />
+    <property name="log_dir" value="D:/logs/logger" />
     <!-- 日志最大的历史 30天 -->
     <property name="maxHistory" value="30" />
 
