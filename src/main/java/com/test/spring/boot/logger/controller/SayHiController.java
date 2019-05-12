@@ -25,9 +25,6 @@ import java.util.List;
 public class SayHiController {
     private static final Logger logger = LoggerFactory.getLogger(SayHiController.class);
 
-    @Resource
-    private TManageRoleMapper manageRoleMapper;
-
     @RequestMapping(value = "",method = RequestMethod.GET)
     public String sayHi(){
         logger.info("这是一句info");
@@ -37,78 +34,5 @@ public class SayHiController {
 
         return "这是一句测试！";
     }
-    /**
-     * @Author hyx
-     * @Description 查表测试
-     * @Date 2019/4/13 0013 16:46
-     * @param
-     * @return void
-     **/
-    @RequestMapping(value = "/select")
-    public void select(){
-        List<TManageRole> list = manageRoleMapper.selectAll();
-    }
 
-    /**
-     * @Author hyx
-     * @Description 测试分页查询
-     * @Date 2019/4/13 0013 16:47
-     * @param
-     * @return void
-     **/
-    @RequestMapping(value = "/page")
-    public void testPage(){
-        PageHelper.startPage(1,10);
-        Example example =new Example(TManageRole.class);
-        PageInfo<TManageRole> pageInfo = new PageInfo<>(manageRoleMapper.selectByExample(example));
-        List<TManageRole> list = pageInfo.getList();
-
-    }
-
-    /**
-     * @Author hyx
-     * @Description 插入表
-     * @Date 2019/4/13 0013 16:54
-     * @param
-     * @return void
-     **/
-    @RequestMapping(value = "/insert")
-    public void testInsert(){
-        TManageRole manageRole = new TManageRole();
-        manageRole.setAid(1);
-        manageRoleMapper.insert(manageRole);
-    }
-
-    /**
-     * @Author hyx
-     * @Description 删除
-     * @Date 2019/4/13 0013 16:56
-     * @param
-     * @return void
-     **/
-    @RequestMapping(value = "/delete")
-    public void testDelete(){
-        TManageRole manageRole = new TManageRole();
-        manageRole.setAid(1);
-        manageRoleMapper.delete(manageRole);
-    }
-
-    /**
-     * @Author hyx
-     * @Description 修改
-     * @Date 2019/4/13 0013 16:57
-     * @param
-     * @return void
-     **/
-    @RequestMapping(value = "/update")
-    public void testUpdate(){
-        //构造条件
-        Example example = new Example(TManageRole.class);
-        example.createCriteria().andEqualTo("roleName","管理员");
-
-        //测试数据
-        TManageRole manageRole = new TManageRole();
-        manageRole.setAid(1);
-        manageRoleMapper.updateByExample(manageRole,example);
-    }
 }
