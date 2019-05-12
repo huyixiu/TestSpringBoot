@@ -31,6 +31,6 @@ hs_err_pid*
 .idea/misc.xml
 .idea/modules.xml
 .idea/vcs.xml
-.idea/workspace.xml
+*.idea/workspace.xml
 target/
 *.iml
