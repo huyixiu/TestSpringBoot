@@ -7,7 +7,7 @@ import ch.qos.logback.core.pattern.color.ForegroundCompositeConverterBase;
 
 /**
  * @ClassName:LogbackColorConfig
- * @Description
+ * @Description 日志颜色配置
  * @Author: hyx
  * @Date: 2019-04-12 18:10
  * @Version 1.0
