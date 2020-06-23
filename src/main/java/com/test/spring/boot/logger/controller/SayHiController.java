@@ -1,18 +1,10 @@
 package com.test.spring.boot.logger.controller;
 
-import com.github.pagehelper.PageHelper;
-import com.github.pagehelper.PageInfo;
-import com.test.spring.boot.logger.entity.TManageRole;
-import com.test.spring.boot.logger.mapper.TManageRoleMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
-import tk.mybatis.mapper.entity.Example;
-
-import javax.annotation.Resource;
-import java.util.List;
 
 /**
  * @ClassName:SayHiController

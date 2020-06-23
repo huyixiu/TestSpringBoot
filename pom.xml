@@ -9,7 +9,6 @@
     <packaging>jar</packaging>
 
     <name>spring-boot-logger</name>
-    <description></description>
 
     <!--继承springboot 2.0.2版本-->
     <parent>
@@ -31,22 +30,28 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+<!--        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-commons</artifactId>
+            <version>2.1.1.RELEASE</version>
+        </dependency>-->
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
 
-        <dependency>
+<!--        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
-        </dependency>
+        </dependency>-->
 
         <!--druid-->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid-spring-boot-starter</artifactId>
-            <version>1.1.0</version>
+            <version>1.1.10</version>
         </dependency>
 
         <!--mysql 数据库-->
@@ -64,11 +69,11 @@
         </dependency>
 
         <!--分页插件-->
-        <dependency>
+<!--        <dependency>
             <groupId>com.github.pagehelper</groupId>
             <artifactId>pagehelper-spring-boot-starter</artifactId>
             <version>1.1.1</version>
-        </dependency>
+        </dependency>-->
 
 
     </dependencies>

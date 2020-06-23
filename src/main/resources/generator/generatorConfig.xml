@@ -30,14 +30,14 @@
         <!-- 配置 XML 存放路径 -->
         <sqlMapGenerator targetPackage="mapper" targetProject="src/main/resources"/>
 
-        <!-- 配置 DAO 存放路径 -->
+        <!-- 配置 MAPPER 存放路径 -->
         <javaClientGenerator
                 targetPackage="com.test.spring.boot.logger.mapper"
                 targetProject="src/main/java"
                 type="XMLMAPPER"/>
 
         <!-- 配置需要指定生成的数据库和表，% 代表所有表 -->
-        <table catalog="test" tableName="%">
+        <table catalog="slp" tableName="%">
             <!-- mysql 配置 -->
             <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
         </table>

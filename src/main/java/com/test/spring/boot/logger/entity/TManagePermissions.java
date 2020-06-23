@@ -3,10 +3,10 @@ package com.test.spring.boot.logger.entity;
 import java.util.Date;
 import javax.persistence.*;
 
-@Table(name = "test..t_manage_permissions")
+@Table(name = "slp..t_manage_permissions")
 public class TManagePermissions {
     /**
-     * 主键
+     * id
      */
     @Id
     @Column(name = "Aid")
@@ -49,13 +49,13 @@ public class TManagePermissions {
     private String adescription;
 
     /**
-     * 0为菜单，1为按钮
+     * 菜单类型（0为菜单，1为按钮）
      */
     @Column(name = "Atype")
     private Integer atype;
 
     /**
-     * 1为启用，2为停用
+     * 数据状态（1为启用，2为停用）
      */
     @Column(name = "Astatus")
     private Integer astatus;
@@ -85,24 +85,18 @@ public class TManagePermissions {
     private Date amodifyTime;
 
     /**
-     * 版本号
-     */
-    @Column(name = "Aversion")
-    private Integer aversion;
-
-    /**
-     * 获取主键
+     * 获取id
      *
-     * @return Aid - 主键
+     * @return Aid - id
      */
     public Integer getAid() {
         return aid;
     }
 
     /**
-     * 设置主键
+     * 设置id
      *
-     * @param aid 主键
+     * @param aid id
      */
     public void setAid(Integer aid) {
         this.aid = aid;
@@ -217,36 +211,36 @@ public class TManagePermissions {
     }
 
     /**
-     * 获取0为菜单，1为按钮
+     * 获取菜单类型（0为菜单，1为按钮）
      *
-     * @return Atype - 0为菜单，1为按钮
+     * @return Atype - 菜单类型（0为菜单，1为按钮）
      */
     public Integer getAtype() {
         return atype;
     }
 
     /**
-     * 设置0为菜单，1为按钮
+     * 设置菜单类型（0为菜单，1为按钮）
      *
-     * @param atype 0为菜单，1为按钮
+     * @param atype 菜单类型（0为菜单，1为按钮）
      */
     public void setAtype(Integer atype) {
         this.atype = atype;
     }
 
     /**
-     * 获取1为启用，2为停用
+     * 获取数据状态（1为启用，2为停用）
      *
-     * @return Astatus - 1为启用，2为停用
+     * @return Astatus - 数据状态（1为启用，2为停用）
      */
     public Integer getAstatus() {
         return astatus;
     }
 
     /**
-     * 设置1为启用，2为停用
+     * 设置数据状态（1为启用，2为停用）
      *
-     * @param astatus 1为启用，2为停用
+     * @param astatus 数据状态（1为启用，2为停用）
      */
     public void setAstatus(Integer astatus) {
         this.astatus = astatus;
@@ -322,23 +316,5 @@ public class TManagePermissions {
      */
     public void setAmodifyTime(Date amodifyTime) {
         this.amodifyTime = amodifyTime;
-    }
-
-    /**
-     * 获取版本号
-     *
-     * @return Aversion - 版本号
-     */
-    public Integer getAversion() {
-        return aversion;
-    }
-
-    /**
-     * 设置版本号
-     *
-     * @param aversion 版本号
-     */
-    public void setAversion(Integer aversion) {
-        this.aversion = aversion;
     }
 }
