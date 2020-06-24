@@ -1,0 +1,25 @@
+#日志配置
+logging:
+  config: classpath:log4j2.xml
+
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/slp?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: 0423
+    dbcp2:
+      initial-size: 1
+      min-idle: 1
+      max-total: 20
+      max-wait-millis: 150
+
+
+mybatis:
+  type-aliases-package: com.test.spring.boot.logger.server.entity #实体类的存放路径
+  mapper-locations: classpath:mapper/*.xml
+
+
+
+

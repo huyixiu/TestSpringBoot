@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.test.spring.boot.logger.server.mapper.TManagePermissionsMapper">
+  <resultMap id="BaseResultMap" type="com.test.spring.boot.logger.server.entity.TManagePermissions">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="Aid" jdbcType="INTEGER" property="aid" />
+    <result column="Apermission_id" jdbcType="INTEGER" property="apermissionId" />
+    <result column="Apermission_parent_id" jdbcType="INTEGER" property="apermissionParentId" />
+    <result column="Apermission_parent_name" jdbcType="VARCHAR" property="apermissionParentName" />
+    <result column="Aname" jdbcType="VARCHAR" property="aname" />
+    <result column="Aurl" jdbcType="VARCHAR" property="aurl" />
+    <result column="Adescription" jdbcType="VARCHAR" property="adescription" />
+    <result column="Atype" jdbcType="INTEGER" property="atype" />
+    <result column="Astatus" jdbcType="INTEGER" property="astatus" />
+    <result column="Acreator" jdbcType="VARCHAR" property="acreator" />
+    <result column="Acreate_time" jdbcType="TIMESTAMP" property="acreateTime" />
+    <result column="Amodifier" jdbcType="VARCHAR" property="amodifier" />
+    <result column="Amodify_time" jdbcType="TIMESTAMP" property="amodifyTime" />
+  </resultMap>
+</mapper>
